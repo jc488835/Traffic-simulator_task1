@@ -55,48 +55,21 @@ public class Car {
         return length;
     }
 
-    public void setLength(float length) {
-        Car.length = length;
-    }
-
-    public float getBreadth() {
-        return breadth;
-    }
-
-    public void setBreadth(float breadth) {
-        Car.breadth = breadth;
-    }
-
     public int getSpeed() {
         return speed;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
     }
 
     public int getPosition() {
         return position;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
-    }
-
     public Road getCurrentRoad() {
         return currentRoad;
-    }
-
-    public void setCurrentRoad(Road currentRoad) {
-        this.currentRoad = currentRoad;
     }
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
 }
