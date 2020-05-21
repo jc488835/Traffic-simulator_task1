@@ -1,10 +1,13 @@
 package com.jetbrains;
 
 import static org.junit.Assert.*;
+
+import Model.Road;
+import Model.TrafficLight;
 import org.junit.Test;
 
 public class TrafficLightTest {
-    Road road = new Road("0", 6,  new int[]{0, 0});
+    Road road = new Road("0", 1, 5, new int[]{0, 0}, Road.Orientation.VERTICAL);
     TrafficLight light = new TrafficLight("3", road);
 
     @Test
@@ -25,7 +28,7 @@ public class TrafficLightTest {
 
     @Test
     public void getPosition() {
-        assertEquals(6, light.getPosition());
+        assertEquals(5, light.getPosition());
     }
 
     @Test

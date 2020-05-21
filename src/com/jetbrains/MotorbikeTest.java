@@ -1,26 +1,28 @@
 package com.jetbrains;
 
 import static org.junit.Assert.*;
+
+import Model.Motorbike;
+import Model.Road;
 import org.junit.Test;
 
 public class MotorbikeTest {
-    Road road = new Road("0", 1, new int[]{0, 0});
-    Motorbike motorbike = new Motorbike("3");
+   Motorbike bike = new Motorbike("3", new Road("0", 1, 5, new int[]{0, 0}, Road.Orientation.VERTICAL));
 
 
     @Test
     public void getSpeed() {
-        assertEquals(1, motorbike.getSpeed());
+        assertEquals(0, bike.getSpeed());
     }
 
     @Test
     public void getPosition() {
-        assertEquals(1, motorbike.getPosition());
+        assertEquals(-2, bike.getPosition());
     }
 
     @Test
     public void getId() {
-        assertEquals("motorbike_3", motorbike.getId());
+        assertEquals("bike_3", bike.getId());
     }
 
 }
